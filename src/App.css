@@ -192,6 +192,40 @@ h1 {
   opacity: 1;
 }
 
+/* Pagination Buttons */
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-family: var(--font-raleway);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f9d3b4; /* Button Text Color */
+  background: #1f2123;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  transition: transform 0.2s;
+}
+
+.pagination button:hover {
+  transform: scale(1.1);
+}
+
+.pagination button:disabled {
+  color: #555; /* Disabled Button Text Color */
+  background: #2c2f31;
+  cursor: default;
+  box-shadow: none;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
